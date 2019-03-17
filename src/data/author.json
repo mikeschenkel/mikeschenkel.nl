@@ -1,0 +1,19 @@
+{
+  "name": "Mike Schenkel",
+  "email": "hallo@mikeschenkel.nl",
+  "avatar": "",
+  "social": {
+    "github": {
+      "name": "mikeschenkel",
+      "url": "https://github.com/mikeschenkel"
+    },
+    "linkedin": {
+      "name": "mikeschenkel",
+      "url": "https://www.linkedin.com/in/mikeschenkel"
+    },
+    "twitter": {
+      "name": "mikeschenkel",
+      "url": "https://twitter.com/mikeschenkel"
+    }
+  }
+}

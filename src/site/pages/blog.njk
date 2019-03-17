@@ -1,0 +1,11 @@
+---
+layout: base
+permalink: /posts/
+title: Blog
+navTitle: Blog
+navOrder: 2
+tags: nav
+---
+
+{% set postslist = collections.posts %}
+{% include 'partials/postslist.njk' %}

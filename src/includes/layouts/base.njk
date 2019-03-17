@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ site.title }} {% if title -%} - {{ title }}{%- endif -%}</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  {%- if layout == 'post' -%}
+    <link rel="stylesheet" href="/assets/css/prism.css" />
+  {% endif %}
+
+  {% include 'partials/meta.njk' %}
+</head>
+<body class="{{ bodyClass }}">
+
+  {% include 'partials/header.njk' %}
+
+  <div class="content">
+
+    {%- if (title) and (layout != 'post') -%}<h1 class="page-title">{{ title }}</h1>{% endif %}
+
+    {{ content | safe }}
+
+  </div>
+
+  {% include 'partials/footer.njk' %}
+  {% include 'partials/analytics.njk' %}
+
+  <!--! LAST BUILD: {{ build.timestamp | isoDate }} -->
+</body>
+</html>

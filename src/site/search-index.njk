@@ -1,0 +1,14 @@
+---
+permalink: search.json
+---
+[
+{%- for item in collections.main -%}
+  {%- if (item.data.layout) and (not item.data.excludeFromSitemap) %}
+  {
+    "url": "{{ item.url }}",
+    "title": "{{ item.data.title }}",
+    "index": "{{ item.templateContent | squash }}"
+  }{% if not loop.last %},{% endif %}
+  {%- endif -%}
+{%- endfor -%}
+]

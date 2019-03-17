@@ -1,0 +1,7 @@
+{
+  "layout": "post",
+  "permalink": "posts/{% if slug %}{{ slug }}{% else %}{{ title | slug }}{% endif %}/index.html",
+  "tags": [
+    "posts"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "stylelint-config-recess-order",
+    "./node_modules/prettier-stylelint/config.js"
+  ],
+  "defaultSeverity": "warning",
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "font-weight-notation": "numeric",
+    "font-family-name-quotes": "always-unless-keyword"
+  }
+}
