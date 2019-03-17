@@ -1,5 +1,7 @@
 # mikeschenkel.nl
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50c00dc1-dd93-4343-afb8-305ce1fefbcd/deploy-status)](https://app.netlify.com/sites/mikeschenkel/deploys)
+
 ## Getting Started
 
 ```bash
