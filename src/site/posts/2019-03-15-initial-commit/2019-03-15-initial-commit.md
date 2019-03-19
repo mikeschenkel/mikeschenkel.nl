@@ -7,4 +7,4 @@ Wanneer iemand met een nieuw project van start gaat in Git zal dit in bijna alle
 
 Met een kleine knipoog naar een van mijn [favoriete tv-series](https://www.imdb.com/title/tt0460649/), heb ik ditmaal voor een ander bericht gekozen.
 
-[![Initial commit van mijn website]({{ 'initial-commit.png' | media(page) }})](https://github.com/mikeschenkel/mikeschenkel.nl/tree/e9ab7bea1014b728c49a06c43179949b1bf41b14)
+[![Initial commit van mijn website met als bericht ‘This website is going to be legen- wait for it…’.]({{ 'initial-commit.png' | media(page) }})](https://github.com/mikeschenkel/mikeschenkel.nl/tree/e9ab7bea1014b728c49a06c43179949b1bf41b14)
