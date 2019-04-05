@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const webpackMerge = require('webpack-merge');
 const webpackStream = require('webpack-stream');
 
@@ -32,18 +31,7 @@ const webpackConfig = {
     devtool: 'source-map'
   },
   production: {
-    mode: 'production',
-    optimization: {
-      minimizer: [
-        new UglifyJSPlugin({
-          uglifyOptions: {
-            output: {
-              comments: false
-            }
-          }
-        })
-      ]
-    }
+    mode: 'production'
   }
 };
 
