@@ -21,8 +21,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // Layouts
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+  eleventyConfig.addLayoutAlias('base', 'base.njk');
+  eleventyConfig.addLayoutAlias('post', 'post.njk');
 
   // Markdown
   eleventyConfig.setLibrary('md', require('./_11ty/markdown.js'));
@@ -76,6 +76,7 @@ module.exports = function(eleventyConfig) {
       input: 'src',
       output: 'dist',
       data: 'data',
+      layouts: 'layouts',
       includes: 'includes'
     },
     templateFormats: ['njk', 'md', 'html'],
