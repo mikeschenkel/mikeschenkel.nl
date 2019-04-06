@@ -7,7 +7,7 @@ const { isProduction } = require('./_config.js');
 
 const webpackConfig = {
   common: {
-    entry: config.scripts.webpack,
+    entry: config.scripts.bundle,
     output: {
       filename: '[name].js'
     },
