@@ -17,15 +17,13 @@
   status = 301
   force = true
 
+# Dotfiles
+[[redirects]]
+  from = "/dotfiles"
+  to = "https://github.com/mikeschenkel/dotfiles"
+
 # 404s
 [[redirects]]
   from = "*"
   to = "/404"
   status = 404
-
-# Dotfiles
-[[redirects]]
-  from = "/dotfiles"
-  to = "https://github.com/mikeschenkel/dotfiles"
-  status = 301
-  force = false
