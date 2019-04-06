@@ -15,7 +15,6 @@
   --color-primary: var(--color-green);
 
   --max-width: 70rem;
-  --grid-gap: 4vw;
 
   --duration-immediately: 0.1s;
 }
@@ -96,36 +95,35 @@ a:not([class]) {
 }
 
 /* ==========================================================================
-   GRID and LAYOUT
+   LAYOUT
    ========================================================================== */
 
-body {
-  @include for-tablet-portrait-up() {
-    display: grid;
-    grid-template-columns: 1fr [main-content-start] var(--max-width) [main-content-end] 1fr;
-    grid-row-gap: var(--grid-gap);
-    justify-content: center;
-  }
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.c-masthead,
+.container {
+  max-width: var(--max-width);
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+.site-header {
+  margin-bottom: 4rem;
+}
+
+.site-footer {
+  margin-top: 5rem;
+}
+
+.c-masthead, .content, .site-footer {
+  width: 100%;
+}
+
 .content {
-  grid-column-start: main-content-start;
-  grid-column-end: main-content-end;
-}
-
-@include for-phone-only() {
-  .site-header {
-    margin-bottom: 4rem;
-  }
-
-  .content {
-    padding: 0 1.6rem;
-  }
-
-  .site-footer {
-    margin-top: 5rem;
-  }
+  flex-grow: 1;
 }
 
 /* ==========================================================================
@@ -133,16 +131,12 @@ body {
    ========================================================================== */
 
 .site-header {
-  display: inherit;
-  grid-template-columns: inherit;
-  grid-column: 1 / -1;
-  grid-gap: inherit;
-  padding: 2rem 1.6rem 1.5rem;
+  padding: 2rem 0 1.5rem 0;
   color: var(--color-gray-100);
   background-color: var(--color-primary);
 
   @include for-tablet-portrait-up() {
-    padding: 4rem 1.6rem 3.5rem;
+    padding: 4rem 0 3.5rem 0;
   }
 }
 
@@ -195,7 +189,6 @@ body {
    ========================================================================== */
 
 .site-footer {
-  grid-column: 1 / -1;
   padding: 0 1.6rem;
   margin-bottom: 2.5rem;
   font-size: 1.4rem;

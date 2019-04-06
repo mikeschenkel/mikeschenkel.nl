@@ -16,18 +16,23 @@
 </head>
 <body class="{{ bodyClass }}">
 
-  {% include 'header.njk' %}
+  <div class="site">
 
-  <div class="content">
+    {% include 'header.njk' %}
 
-    {%- if (title) and (layout != 'post') -%}<h1 class="page-title">{{ title }}</h1>{% endif %}
+    <div class="content container">
 
-    {{ content | safe }}
+      {%- if (title) and (layout != 'post') -%}<h1 class="page-title">{{ title }}</h1>{% endif %}
+
+      {{ content | safe }}
+
+    </div>
+
+    {% include 'footer.njk' %}
+    {% include 'analytics.njk' %}
 
   </div>
 
-  {% include 'footer.njk' %}
-  {% include 'analytics.njk' %}
   <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 
   <!--! LAST BUILD: {{ build.timestamp | isoDate }} -->
