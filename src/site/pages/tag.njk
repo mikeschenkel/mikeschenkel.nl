@@ -18,6 +18,6 @@ pagination:
 <h1 class="page-title">Tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[ tag ] %}
-{% include 'partials/postslist.njk' %}
+{% include 'postslist.njk' %}
 
 <p class="c-more-tags">Bekijk <a href="{{ '/tags/' | url }}">alle tags</a>.</p>

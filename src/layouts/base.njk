@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="/assets/css/prism.css" />
   {% endif %}
 
-  {% include 'partials/meta.njk' %}
+  {% include 'meta.njk' %}
 </head>
 <body class="{{ bodyClass }}">
 
-  {% include 'partials/header.njk' %}
+  {% include 'header.njk' %}
 
   <div class="content">
 
@@ -26,8 +26,8 @@
 
   </div>
 
-  {% include 'partials/footer.njk' %}
-  {% include 'partials/analytics.njk' %}
+  {% include 'footer.njk' %}
+  {% include 'analytics.njk' %}
   <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 
   <!--! LAST BUILD: {{ build.timestamp | isoDate }} -->
