@@ -23,6 +23,6 @@ module.exports = {
     }
   },
   eleventy: {
-    watch: ['**/*.{njk,html,md}']
+    watch: ['./src/**/*.{njk,html,md}']
   }
 };

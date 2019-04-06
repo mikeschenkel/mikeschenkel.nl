@@ -44,10 +44,7 @@ gulp.task('watch', function() {
     gulp.series('scripts', reloadBrowser)
   );
 
-  gulp.watch(
-    config.paths.src + config.eleventy.watch,
-    gulp.series('eleventy', reloadBrowser)
-  );
+  gulp.watch(config.eleventy.watch, gulp.series('eleventy', reloadBrowser));
 });
 
 gulp.task('serve', gulp.series('browsersync', 'watch'));
