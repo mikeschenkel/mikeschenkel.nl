@@ -251,6 +251,23 @@ body {
     margin-top: 3rem;
   }
 
+  a {
+    color: var(--color-primary);
+  }
+
+  a[href*="//"]:not([href*="mikeschenkel.nl"]) {
+    &:after {
+      padding-left: 1em;
+      margin-left: 0.25em;
+      content: '';
+      background-color: var(--color-primary);
+      mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWV4dGVybmFsLWxpbmsiPjxwYXRoIGQ9Ik0xOCAxM3Y2YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yVjhhMiAyIDAgMCAxIDItMmg2TTE1IDNoNnY2TTEwIDE0TDIxIDMiLz48L3N2Zz4=");
+      mask-size: 1em;
+      mask-position: center;
+      mask-repeat: no-repeat;
+    }
+  }
+
   h2,
   h3 {
     position: relative;
