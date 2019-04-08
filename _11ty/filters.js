@@ -134,9 +134,7 @@ module.exports = {
   media: function(filename, page) {
     const path = page.inputPath.split('/');
     if (path.length) {
-      const type = path[path.length - 3];
-      const subdir = path[path.length - 2];
-      return `/assets/media/${type}/${subdir}/${filename}`;
+      return `/media/${filename}`;
     }
     return filename;
   },

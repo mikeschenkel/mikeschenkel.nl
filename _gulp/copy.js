@@ -14,15 +14,14 @@ gulp.task('copy:assets', function() {
 });
 
 gulp.task('copy:media', function() {
-  const baseDir = './src/site';
+  const baseDir = './src/media/';
   const mediaGlobs = [
-    baseDir + '/posts/**/*.{jpg,jpeg,png,gif,webp,mp3,mp4,webm,ogg}',
-    baseDir + '/links/**/*.{jpg,jpeg,png,gif,webp,mp3,mp4,webm,ogg}'
+    baseDir + '**/*.{jpg,jpeg,png,gif,webp,mp3,mp4,webm,ogg}'
   ];
 
   return gulp
     .src(mediaGlobs, { base: baseDir })
-    .pipe(gulp.dest('./dist/assets/media'));
+    .pipe(gulp.dest('./dist/media'));
 });
 
 gulp.task('copy', gulp.parallel(['copy:assets', 'copy:media']));
