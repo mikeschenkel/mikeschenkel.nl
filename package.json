@@ -60,7 +60,7 @@
     "prettier-eslint-cli": "^4.7.1",
     "prettier-stylelint": "^0.4.2",
     "require-dir": "^1.2.0",
-    "sass": "^1.18.0",
+    "sass": "^1.20.1",
     "stylelint": "^10.0.0",
     "stylelint-config-recess-order": "^2.0.1",
     "through2": "^3.0.1",
