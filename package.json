@@ -7,8 +7,8 @@
     "serve": "gulp serve",
     "build": "NODE_ENV=prod gulp build",
     "debug": "DEBUG=Eleventy* npm start",
-    "eslint": "eslint 'src/assets/scripts/**/*.js'; exit 0",
-    "stylelint": "stylelint 'src/assets/styles/**/*.scss'; exit 0",
+    "lint:scripts": "eslint 'src/assets/scripts/**/*.js'; exit 0",
+    "lint:styles": "stylelint 'src/assets/styles/**/*.scss'; exit 0",
     "format:scripts": "prettier-eslint 'src/assets/scripts/**/*.js' --write",
     "format:styles": "prettier-stylelint 'src/assets/styles/**/*.scss' --write"
   },
