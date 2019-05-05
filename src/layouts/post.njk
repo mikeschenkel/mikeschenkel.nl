@@ -24,6 +24,13 @@ bodyClass: single-post
           </div>
         </dd>
       </dl>
+      <div hidden>
+          <a class="u-url" href="{{ page.url | url | absoluteUrl(site.url) }}">{{ title }}</a>
+          <p class="h-card p-author">
+            <a class="p-name u-url" rel="author" href="{{ site.url }}">{{ author.name }}</a>
+            <img class="u-photo" src="{{ author.avatar | url | absoluteUrl(site.url) }}" />
+          </p>
+      </div>
     </div>
   </header>
 
