@@ -1,14 +1,14 @@
-<ul class="c-listing">
+<ul class="c-listing h-feed">
 {% for post in postslist | reverse %}
 
   <li class="c-listing__item{% if post.url == url %} is-active{% endif %}">
 
-    <article class="c-entry">
+    <article class="c-entry h-entry">
       <header>
-        <h2 class="c-entry__title"><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
+        <h2 class="c-entry__title p-name"><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
         <dl class="c-entry__meta">
           <dt class="u-hidden-visually">Geplaatst op</dt>
-          <dd><time class="c-entry__date" datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time></dd>
+          <dd><time class="c-entry__date dt-published" datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time></dd>
           <dt class="u-hidden-visually">Tags</dt>
           <dd>
             <div class="c-entry__tags">
