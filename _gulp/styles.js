@@ -8,7 +8,6 @@ const through2 = require('through2');
 
 const config = require('./_config.js');
 const { isProduction } = require('./_config.js');
-const browserslist = require('../package.json').browserslist;
 
 sass.compiler = require('sass');
 
@@ -18,7 +17,7 @@ const stylesConfig = {
     includePaths: 'node_modules'
   },
   postcss: {
-    development: [autoprefixer({ browsers: browserslist })],
+    development: [autoprefixer()],
     production: [csso()]
   }
 };
