@@ -21,7 +21,7 @@ module.exports = {
    * @param {String} date
    */
   readableDate: function(date) {
-    return DateTime.fromJSDate(date)
+    return DateTime.fromJSDate(date, { zone: 'Europe/Amsterdam' })
       .setLocale('nl')
       .toFormat('dd LLLL yyyy');
   },
