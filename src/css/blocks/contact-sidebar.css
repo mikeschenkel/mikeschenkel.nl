@@ -1,0 +1,12 @@
+.contact-sidebar {
+	font-family: var(--font-display);
+	font-size: var(--step--1);
+
+	& dt {
+		font-weight: bold;
+	}
+
+	& dl > dt:not(:first-child) {
+		margin-block-start: var(--step--2);
+	}
+}

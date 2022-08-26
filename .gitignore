@@ -1,4 +1,2 @@
-dist/
-drafts/
-node_modules/
-.env
+node_modules
+public

@@ -1,0 +1,14 @@
+/* Global variables */
+:root {
+	--gutter: var(--space-s-m);
+	--flow-space: var(--space-m);
+	--border-radius: 0.25rem;
+	--tracking: -0.025ch;
+
+	--wrapper-max-width: 80rem;
+	--wrapper-gutter: var(--space-s);
+
+	--sidebar-gutter: var(--gutter);
+	--sidebar-target-width: 20rem;
+	--sidebar-content-min-width: 60%;
+}

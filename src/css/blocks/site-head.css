@@ -1,0 +1,12 @@
+.site-head {
+	margin-block-start: var(--gutter);
+	font-size: var(--step-0);
+
+}
+
+.site-head__inner {
+	display: flex;
+	gap: var(--gutter);
+	align-items: center;
+	justify-content: space-between;
+}

@@ -1,0 +1,22 @@
+.socials {
+	display: flex;
+	gap: var(--space-m);
+	justify-content: space-between;
+	max-inline-size: 50ch;
+	padding-inline-start: 0;
+	font-family: var(--font-display);
+	font-weight: bold;
+
+	& .icon {
+		color: var(--color-dark);
+	}
+
+	& a {
+		color: currentColor;
+
+		&:hover {
+			color: var(--color-secondary);
+			text-decoration-line: underline;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+.contact-email {
+	display: inline-flex;
+	gap: var(--space-s);
+	align-items: center;
+	font-family: var(--font-display);
+	font-weight: 700;
+}

@@ -1,0 +1,9 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: auto;
+	margin-block-start: var(--space-l-2xl);
+}

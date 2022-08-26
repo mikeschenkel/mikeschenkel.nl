@@ -1,0 +1,19 @@
+{% if navigation.items %}
+	<nav class="site-nav" aria-label="Main">
+		<ul class="site-nav__list" role="list">
+			{% for item in navigation.items %}
+				{% set currentAttribute = '' %}
+
+				{% if page.url == item.url %}
+					{% set currentAttribute = ' aria-current="page"' %}
+				{% endif %}
+
+				<li>
+					<a href="{{ item.url | url }}"{{ currentAttribute | safe }}>
+						{{ item.label }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+{% endif %}

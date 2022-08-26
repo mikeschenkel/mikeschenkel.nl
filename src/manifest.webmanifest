@@ -1,0 +1,12 @@
+{
+	"lang": "nl-NL",
+	"dir": "ltr",
+	"start_url": "/index.html",
+	"name": "Mike Schenkel",
+	"short_name": "MS",
+	"icons": [
+		{ "src": "/192.png", "type": "image/png", "sizes": "192x192" },
+		{ "src": "/512.png", "type": "image/png", "sizes": "512x512" }
+	],
+	"display": "standalone"
+}

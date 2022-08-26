@@ -1,0 +1,24 @@
+.availability {
+	&::before {
+		display: inline-block;
+		width: .5em;
+		width: 1cap;
+		height: .5em;
+		height: 1cap;
+		margin-inline-end: 0.5rem;
+		content: " ";
+		background: var(--availability-color, gray);
+	}
+
+	&[data-availability='unavailable'] {
+		--availability-color: red;
+	}
+
+	&[data-availability='soon'] {
+		--availability-color: orange;
+	}
+
+	&[data-availability='available'] {
+		--availability-color: green;
+	}
+}

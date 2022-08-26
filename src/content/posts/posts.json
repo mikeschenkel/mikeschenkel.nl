@@ -1,7 +1,0 @@
-{
-  "layout": "post",
-  "permalink": "{{ date | slugDate }}/{% if slug %}{{ slug }}{% else %}{{ title | slug }}{% endif %}/index.html",
-  "tags": [
-    "posts"
-  ]
-}

@@ -1,0 +1,14 @@
+.site-foot {
+	--line-length: auto;
+	--flow-space: var(--space-s);
+
+	padding-block: var(--space-m-l);
+	margin-block-start: var(--space-l-2xl);
+	font-family: var(--font-display);
+	font-size: var(--step--1);
+	background-color: var(--color-surface1);
+
+	& a {
+		color: currentColor;
+	}
+}

@@ -1,0 +1,11 @@
+@import-glob 'tokens/*.css';
+
+@import 'global/fonts.css';
+@import 'global/reset.css';
+@import 'global/variables.css';
+@import 'global/global.css';
+@import 'global/layout.css';
+
+@import-glob 'blocks/*.css';
+@import-glob 'compositions/*.css';
+@import-glob 'utilities/*.css';

@@ -1,0 +1,5 @@
+.prose {
+	& ul:not([role='list']) {
+		padding-inline-start: 1em;
+	}
+}

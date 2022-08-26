@@ -1,0 +1,9 @@
+:root {
+	--color-dark: #080708;
+	--color-light: #f7f7f7;
+	--color-light-glare: #fff;
+	--color-primary: #62ac3a;
+	--color-secondary: #017fad;
+	--color-surface1: #f1f3f5;
+	--link-color: var(--color-secondary);
+}

@@ -1,0 +1,5 @@
+:root {
+	--font-base: 'BespokeSlab-Variable', serif;
+	--font-display: 'Atkinson-Hyperlegible', serif;
+	--font-code: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}

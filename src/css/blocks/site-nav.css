@@ -1,0 +1,23 @@
+.site-nav {
+	justify-self: flex-end;
+	font-family: var(--font-display);
+
+	& a {
+		font-weight: 700;
+		color: currentColor;
+		text-decoration-line: none;
+		text-underline-offset: 0.25em;
+
+		&:hover,
+		&[aria-current="page"] {
+			color: var(--link-color);
+			text-decoration-line: underline;
+		}
+	}
+}
+
+.site-nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: var(--gutter);
+}
