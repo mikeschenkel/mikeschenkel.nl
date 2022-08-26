@@ -3,15 +3,15 @@
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ pageTitle }}</title>
-	<meta name="description" content="{{ pageDescription }}" />
+	<meta name="description" content="{{ pageDescription }}">
 	<link rel="icon" href="/favicon.ico" sizes="any">
 	<link rel="icon" href="/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="manifest" href="/manifest.webmanifest">
-	<link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
+	<link href="{{ '/css/style.css' | url }}" rel="stylesheet">
 </head>
 <body class="{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
 
