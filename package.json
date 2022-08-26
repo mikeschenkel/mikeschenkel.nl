@@ -19,7 +19,7 @@
 		"debug:build": "DEBUG=Eleventy* npm run build",
 		"benchmark": "DEBUG=Eleventy:Benchmark* eleventy"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"@11ty/eleventy": "^2.0.0-canary.15",
 		"autoprefixer": "^10.4.8",
 		"cssnano": "^5.1.13",
