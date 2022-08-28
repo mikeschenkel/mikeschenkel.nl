@@ -7,8 +7,8 @@
 	font-family: var(--font-display);
 	font-weight: bold;
 
-	& .icon {
-		color: var(--color-dark);
+	& svg {
+		color: var(--color-dark-glare);
 	}
 
 	& a {
