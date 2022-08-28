@@ -1,3 +1,7 @@
 .mt\:flow {
 	margin-top: var(--flow-space);
 }
+
+.mt\:l-2xl {
+	margin-top: var(--space-l-2xl);
+}
