@@ -25,10 +25,12 @@ layout: base.njk
 			</ul>
 		</div>
 		<div>
-			<picture class="border-radius">
-				<source srcset="/img/mike.png" media="(min-width: 65rem)">
-				<source srcset="/img/mike-small.jpg">
-				<img class="border-radius" src="/img/mike-small.jpg" alt="">
+			<picture>
+				<source media="(min-width: 65rem)" srcset="/img/mike-portrait.avif" type="image/avif" width="394" height="554">
+				<source media="(min-width: 65rem)" srcset="/img/mike-portrait.jpg" width="394" height="554">
+				<source srcset="/img/mike-landscape.avif" type="image/avif" width="950" height="588">
+				<source srcset="/img/mike-landscape.jpg" width="950" height="588">
+				<img class="border-radius" src="/img/mike-landscape.jpg" alt="">
 			</picture>
 		</div>
 	</div>
