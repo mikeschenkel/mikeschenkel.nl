@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ meta.siteLocale }}">
-{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
-{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+<html lang="{{ site.lang }}">
+{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ site.title }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}{% endset -%}
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@
 <footer class="site-foot shadow-dots" role="contentinfo" aria-label="Footer">
 	<div class="wrapper flow">
 		<p>&copy; 2014–{% year %} Mike Schenkel</p>
-		<p>Deze website is gebouwd met <a href="https://www.11ty.dev/">Eleventy</a> en wordt gehost op <a href="https://www.netlify.com/">Netlify</a>. De broncode is te vinden op <a href="https://github.com/mikeschenkel/mikeschenkel.nl">GitHub</a>. </p>
+		<p>Deze website is gebouwd met <a href="https://www.11ty.dev/">Eleventy</a> en wordt gehost op <a href="https://www.netlify.com/">Netlify</a>. De broncode is te vinden op <a href="{{ site.repo }}">GitHub</a>. </p>
 	</div>
 </footer>
 
