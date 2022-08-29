@@ -1,6 +1,7 @@
 .skills {
+	--wrapper-max-width: 75rem;
 	--grid-placement: auto-fit;
-	--grid-min-item-size: clamp(8rem, 25%, 10rem);
+	--grid-min-item-size: 10rem;
 	--flow-space: 0.5ch;
 
 	font-family: var(--font-display);
