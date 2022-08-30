@@ -1,8 +1,8 @@
 {
 	"name": "Mike Schenkel",
 	"email": "hallo@mikeschenkel.nl",
-	"avatar": "/assets/images/mike-schenkel.png",
-	"socials": {
+	"avatar": "/assets/img/avatar.jpg",
+	"social": {
 		"github": {
 			"title": "GitHub",
 			"username": "mikeschenkel",
