@@ -1,0 +1,20 @@
+{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
+
+{# Page-Specific #}
+<meta name="description" content="{{ description or site.description }}">
+{%- if image -%}<meta name="image" content="{{ absolutePageUrl }}{{ image }}">{%- endif -%}
+
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:image" content="{%- if image -%}{{ absolutePageUrl }}{{ image }}{%- else -%}{{ author.avatar | url | absoluteUrl(site.url) }}{%- endif -%}">
+<meta name="twitter:card" content="summary">
+
+{# General #}
+<meta name="author" content="{{ author.name }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta name="twitter:site" content="@{{ author.social.twitter.username }}">
+<meta name="twitter:creator" content="@{{ author.social.twitter.username }}">
+
+<link rel="canonical" href="{{ absolutePageUrl }}">
