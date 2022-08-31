@@ -1,34 +1,37 @@
+/* Bespoke Sans */
 @font-face {
-	font-family: 'BespokeSlab-Variable';
+	font-family: 'Bespoke Sans';
 	font-style: normal;
-	font-weight: 400;
-	src: url('/fonts/BespokeSlab-Variable.woff2') format('woff2'),
-			 url('/fonts/BespokeSlab-Variable.woff') format('woff');
+	font-weight: 300 800;
+	src: url('/fonts/BespokeSans-Variable.woff2') format('woff2'),
+			 url('/fonts/BespokeSans-Variable.woff') format('woff');
 	font-display: fallback;
 }
 
 @font-face {
-	font-family: 'BespokeSlab-Variable';
+	font-family: 'Bespoke Sans';
 	font-style: italic;
-	src: url('/fonts/BespokeSlab-Variable-Italic.woff2') format('woff2'),
-			 url('/fonts/BespokeSlab-Variable-Italic.woff') format('woff');
+	font-weight: 300 800;
+	src: url('/fonts/BespokeSans-VariableItalic.woff2') format('woff2'),
+			 url('/fonts/BespokeSans-VariableItalic.woff') format('woff');
 	font-display: fallback;
 }
 
+/* Atikinson Hyperlegible */
 @font-face {
-	font-family: 'Atkinson-Hyperlegible';
+	font-family: 'Atkinson Hyperlegible';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/Atkinson-Hyperlegible-Regular.woff2') format('woff2'),
-			 url('/fonts/Atkinson-Hyperlegible-Regular.woff') format('woff');
+	src: url('/fonts/AtkinsonHyperlegible-Regular.woff2') format('woff2'),
+       url('/fonts/AtkinsonHyperlegible-Regular.woff') format('woff');
 	font-display: fallback;
 }
 
 @font-face {
-	font-family: 'Atkinson-Hyperlegible';
+	font-family: 'Atkinson Hyperlegible';
 	font-style: normal;
 	font-weight: 700;
-	src: url('/fonts/Atkinson-Hyperlegible-Bold.woff2') format('woff2'),
-			 url('/fonts/Atkinson-Hyperlegible-Bold.woff') format('woff');
+	src: url('/fonts/AtkinsonHyperlegible-Bold.woff2') format('woff2'),
+       url('/fonts/AtkinsonHyperlegible-Bold.woff') format('woff');
 	font-display: fallback;
 }
