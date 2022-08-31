@@ -1,9 +1,6 @@
 .contact-sidebar {
-	font-family: var(--font-display);
-	font-size: var(--step--1);
-
 	& dt {
-		font-weight: bold;
+		font-weight: 700;
 	}
 
 	& dl > dt:not(:first-child) {

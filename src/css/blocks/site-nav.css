@@ -1,7 +1,4 @@
 .site-nav {
-	justify-self: flex-end;
-	font-family: var(--font-display);
-
 	& a {
 		font-weight: 700;
 		color: currentColor;

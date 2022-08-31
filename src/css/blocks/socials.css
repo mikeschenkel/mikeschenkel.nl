@@ -4,8 +4,7 @@
 	justify-content: space-between;
 	max-inline-size: 50ch;
 	padding-inline-start: 0;
-	font-family: var(--font-display);
-	font-weight: bold;
+	font-weight: 700;
 
 	& svg {
 		color: var(--color-dark-glare);
