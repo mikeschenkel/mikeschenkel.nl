@@ -2,10 +2,11 @@
 layout: base.njk
 ---
 
-<div class="wrapper flow">
-	<h1>Contact</h1>
+<div class="wrapper">
 	<div class="with-sidebar">
-		<div class="prose flow">
+		<article class="prose flow">
+			<h1>Contact</h1>
+
 			<p>Op dit moment ben ik op zoek naar nieuwe uitdagingen of opdrachten. Ik kan je helpen met het volgende:</p>
 
 			<ul>
@@ -25,10 +26,15 @@ layout: base.njk
 			</ul>
 
 			<p>Wil je graag samenwerken of heb je een vraag? Stuur me gerust een bericht en ik probeer hier zo snel mogelijk op terug te komen.</p>
-		</div>
 
-		<div class="sidebar contact-sidebar">
-			<dl>
+			<div class="contact-email">
+				<img src="/img/mail.png" alt="" width="64" height="64" loading="lazy">
+				<a href="mailto:{{ author.email }}">{{ author.email }}</a>
+			</div>
+		</article>
+
+		<div class="sidebar">
+			<dl class="card text-step--1">
 				<dt>Status</dt>
 				<dd><span class="availability" data-availability="available">Beschikbaar</span></dd>
 				<dt>Kamer van Koophandel</dt>
@@ -37,9 +43,5 @@ layout: base.njk
 				<dd>NL002245952B44</dd>
 			</dl>
 		</div>
-	</div>
-	<div class="contact-email mt:flow">
-		<img src="/img/mail.png" alt="" loading="lazy" width="64" height="64">
-		<a href="mailto:{{ author.email }}">{{ author.email }}</a>
 	</div>
 </div>

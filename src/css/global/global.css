@@ -85,6 +85,16 @@ a[href*='mailto:'] {
 	}
 }
 
+dl {
+	& dt {
+		font-weight: 700;
+	}
+
+	& > dd + dt {
+		margin-block-start: 1em;
+	}
+}
+
 [tabindex='-1']:focus {
 	outline: none;
 }
