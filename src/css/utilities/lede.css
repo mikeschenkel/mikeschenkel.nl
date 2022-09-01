@@ -1,3 +1,7 @@
 .lede {
+	max-width: 45ch;
 	font-size: 1.25em;
+	font-size: var(--step-1);
+	font-style: italic;
+	line-height: 1.4;
 }
