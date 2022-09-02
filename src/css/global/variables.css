@@ -1,7 +1,7 @@
 /* Global variables */
 :root {
 	--gutter: var(--space-s-m);
-	--flow-space: var(--space-m);
+	--flow-space: var(--space-m-l);
 	--border-radius: 0.25rem;
 	--tracking: -0.025ch;
 
