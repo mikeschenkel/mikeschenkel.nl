@@ -9,3 +9,7 @@
 .text-step--1 {
 	font-size: var(--step--1);
 }
+
+.text-smaller {
+	font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
