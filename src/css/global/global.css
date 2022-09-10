@@ -42,25 +42,21 @@ h3 {
 }
 
 /* More generic elements */
-:where(a, u, ins, abbr) {
-	text-underline-offset: 0.08em;
-}
-
 a {
-	--_link-color: var(--link-color, currentColor);
-	--_line-color: var(--line-color, var(--_link-color));
+	color: var(--link-color);
+	text-decoration-thickness: var(--link-underline-thickness);
+	text-decoration-color: var(--link-underline-color);
+	text-underline-offset: var(--link-underline-offset);
+	text-decoration-skip-ink: auto;
 
-	color: var(--_link-color);
-	text-decoration-thickness: 2px;
-	text-decoration-color: var(--_line-color);
-
-	&:hover {
-		text-decoration-line: none;
+	&:hover,
+	&:focus {
+		text-decoration: none;
 	}
 }
 
 a[href*='mailto:'] {
-	color: currentColor;
+	--link-color: currentColor;
 }
 
 /* a, button, input, textarea { */

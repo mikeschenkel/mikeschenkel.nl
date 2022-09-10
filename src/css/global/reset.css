@@ -77,8 +77,3 @@ dd {
 	margin-block: 0;
 	list-style: none;
 }
-
-/* More readable underline style for anchor tags without a class. This could be set on anchor tags globally, but it can cause conflicts. */
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-}

@@ -6,5 +6,8 @@
 	--color-primary: #62ac3a;
 	--color-secondary: #017fad;
 	--color-surface1: #f1f3f5;
+
 	--link-color: var(--color-secondary);
+	--link-color-hover: var(--link-color);
+	--link-color-decoration: var(--link-color);
 }

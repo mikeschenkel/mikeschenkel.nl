@@ -1,13 +1,11 @@
 .site-foot {
 	--line-length: auto;
 	--flow-space: var(--space-s);
+	--link-color: currentColor;
+	--link-underline-color: currentColor;
 
 	padding-block: var(--space-m-l);
 	margin-block-start: var(--space-l-2xl);
 	font-size: var(--step--1);
 	background-color: var(--color-surface1);
-
-	& a {
-		color: currentColor;
-	}
 }
