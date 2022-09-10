@@ -1,5 +1,14 @@
 /* Global variables */
 :root {
+	--link-underline-color: var(--link-color);
+	--link-underline-thickness: 0.1em;
+	--link-underline-offset: 0.15em;
+
+	--outline-width: 3px;
+	--outline-style: solid;
+	--outline-color: var(--link-color, currentColor);
+	--outline-offset: 0.2em;
+
 	--gutter: var(--space-s-m);
 	--flow-space: var(--space-m-l);
 	--border-radius: 0.25rem;
