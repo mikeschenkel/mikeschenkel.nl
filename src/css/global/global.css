@@ -59,26 +59,26 @@ a[href*='mailto:'] {
 	--link-color: currentColor;
 }
 
-/* a, button, input, textarea { */
-:where(a, button, input, textarea) {
-	--outline-width: 2px;
-	--outline-style: solid;
-	--outline-color: var(--link-color, currentColor);
-	--outline-offset: 0.3ch;
+:focus {
+	outline: var(--outline-width) var(--outline-style) var(--outline-color);
+	outline-offset: var(--outline-offset);
+}
 
-	&:focus {
-		outline: var(--outline-width) var(--outline-style) var(--outline-color);
-		outline-offset: var(--outline-offset);
-	}
+:focus:not(:focus-visible) {
+	outline: none;
+}
 
-	&:focus:not(:focus-visible) {
-		outline: none;
-	}
+:focus-visible {
+	outline: var(--outline-width) var(--outline-style) var(--outline-color);
+	outline-offset: var(--outline-offset);
 
-	&:focus-visible {
-		outline: var(--outline-width) var(--outline-style) var(--outline-color);
-		outline-offset: var(--outline-offset);
+	@media (prefers-reduced-motion: no-preference) {
+		transition: outline-offset 0.15s linear;
 	}
+}
+
+[tabindex='-1']:focus {
+	outline: none;
 }
 
 dl {
@@ -89,10 +89,6 @@ dl {
 	& > dd + dt {
 		margin-block-start: 1em;
 	}
-}
-
-[tabindex='-1']:focus {
-	outline: none;
 }
 
 :target {
