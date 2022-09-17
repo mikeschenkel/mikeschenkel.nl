@@ -1,0 +1,15 @@
+.social-list {
+	--cluster-horizontal-alignment: space-between;
+
+	max-inline-size: 50ch;
+
+	& a {
+		--link-color: currentColor;
+		--link-underline-thickness: 0.15em;
+		font-weight: 700;
+	}
+
+	& svg {
+		color: var(--color-dark-glare);
+	}
+}
