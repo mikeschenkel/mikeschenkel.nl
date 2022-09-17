@@ -9,7 +9,7 @@
 	--outline-color: var(--link-color, currentColor);
 	--outline-offset: 0.2em;
 
-	--gutter: var(--space-s-m);
+	--gutter: var(--space-s);
 	--flow-space: var(--space-m-l);
 	--border-radius: 0.25rem;
 	--tracking: -0.025ch;
