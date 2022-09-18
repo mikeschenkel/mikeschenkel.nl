@@ -43,7 +43,7 @@
 	grid-row: 1;
 	grid-column: 1 / 7;
 	margin-block-end: var(--space-s);
-	font-size: clamp(2.375rem, 1.536rem + 4.2vw, 5.313rem);
+	font-size: clamp(2.375rem, 1.536rem + 4.2vw, 5.313rem); /* 38px -> 85px */
 
 	@media (--lg-n-above) {
 		margin-block-start: var(--space-xl);
