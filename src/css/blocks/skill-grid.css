@@ -1,12 +1,10 @@
-.skills {
-	--wrapper-max-width: 75rem;
+.skill-grid {
 	--grid-placement: auto-fit;
 	--grid-min-item-size: 10rem;
-	--flow-space: 0.5ch;
+	--wrapper-max-width: 75rem;
 
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
-	color: #373737;
 
 	& svg {
 		display: block;
