@@ -1,9 +1,12 @@
 .site-logo {
-	--outline-color: var(--color-primary);
-	--_logo-color: var(--logo-color, var(--color-primary));
-	--logo-size: var(--space-2xl-3xl);
+	--logo-color: var(--color-primary);
+	--logo-size: clamp(4.688rem, 3.795rem + 4.46vw, 7.813rem); /* 75px -> 125px */
+	--outline-color: var(--logo-color);
 
 	inline-size: var(--logo-size);
 	block-size: var(--logo-size);
-	color: var(--_logo-color);
+
+	& svg {
+		fill: var(--logo-color);
+	}
 }
