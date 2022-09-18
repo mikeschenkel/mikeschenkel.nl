@@ -1,14 +1,22 @@
 .site-nav {
 	& a {
 		font-weight: 700;
-		color: currentColor;
-		text-decoration-line: none;
-		text-underline-offset: 0.25em;
+		color: var(--nav-link-color, currentColor);
+		text-decoration: none;
+		border-bottom: 0.15em solid var(--nav-border-color, transparent);
+
+		@media (prefers-reduced-motion: no-preference) {
+			transition: outline-offset 0.15s linear, color .15s ease-in-out, border-bottom-color .15s ease-in-out;
+		}
 
 		&:hover,
 		&[aria-current="page"] {
-			color: var(--link-color);
-			text-decoration-line: underline;
+			--nav-link-color: var(--link-color-hover);
+			--nav-border-color: var(--link-color-hover);
+		}
+
+		&:focus {
+			border-bottom: none;
 		}
 	}
 }
