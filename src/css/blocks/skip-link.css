@@ -1,0 +1,12 @@
+.skip-link {
+	position: absolute;
+	top: var(--gutter);
+	left: 50%;
+	z-index: 2;
+	padding: var(--space-s);
+	color: var(--color-light);
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--color-secondary);
+	transform: translateX(-50%);
+}
