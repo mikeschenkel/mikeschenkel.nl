@@ -1,13 +1,15 @@
 .availability {
+	display: inline-flex;
+	align-items: center;
+
 	&::before {
 		display: inline-block;
-		width: .5em;
-		width: 1cap;
-		height: .5em;
-		height: 1cap;
-		margin-inline-end: 0.5rem;
+		width: .75em;
+		height: .75em;
+		margin-inline-end: 0.35em;
 		content: " ";
 		background: var(--availability-color, gray);
+		border-radius: 50%;
 	}
 
 	&[data-availability='unavailable'] {
