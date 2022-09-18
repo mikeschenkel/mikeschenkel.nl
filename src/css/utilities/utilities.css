@@ -1,8 +1,4 @@
-.mt\:flow {
-	margin-top: var(--flow-space);
-}
-
-.mt\:l-2xl {
+.mt-l-2xl {
 	margin-top: var(--space-l-2xl);
 }
 
@@ -12,4 +8,8 @@
 
 .text-smaller {
 	font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+}
+
+.region {
+	padding-block: var(--region-space, var(--space-l-2xl));
 }
