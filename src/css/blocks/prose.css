@@ -1,4 +1,14 @@
 .prose {
+	--flow-space: var(--space-m-l);
+
+	& :is(h2) {
+		--flow-space: var(--space-l-xl);
+	}
+
+	& :is(h2, h3) + * {
+		--flow-space: var(--space-xs);
+	}
+
 	& ul:not([role='list']) {
 		padding-inline-start: 1em;
 	}
