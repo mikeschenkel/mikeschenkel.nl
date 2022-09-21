@@ -2,7 +2,7 @@
 :root {
 	--link-underline-color: var(--link-color);
 	--link-underline-thickness: 0.1em;
-	--link-underline-offset: 0.15em;
+	--link-underline-offset: 0.1em;
 
 	--outline-width: 3px;
 	--outline-style: solid;

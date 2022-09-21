@@ -11,28 +11,28 @@ body {
 h1,
 h2,
 h3 {
-	font-family: var(--font-special);
-	line-height: 1;
+	line-height: 1.2;
 	letter-spacing: var(--tracking);
 }
 
 h1 {
-	font-size: var(--step-5);
+	font-size: var(--h1);
+	line-height: 1;
 }
 
 h2 {
-	font-size: var(--step-4);
+	font-size: var(--h2);
 }
 
 h3 {
-	font-size: var(--step-3);
+	font-size: var(--h3);
 }
 
 /* Set line lengths */
 p,
 li,
 blockquote:not([class]) {
-	max-inline-size: var(--line-length, 60ch);
+	max-inline-size: var(--line-length, 55ch);
 }
 
 h1,

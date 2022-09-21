@@ -11,3 +11,9 @@
   --step-6: clamp(3.17rem, calc(2.58rem + 2.96vw), 5.25rem);
   --step-7: clamp(3.81rem, calc(3.02rem + 3.93vw), 6.56rem);
 }
+
+:root {
+	--h1: clamp(2.15rem, 1.804rem + 1.73vw, 3.36rem); /* step-2 -> step-4 */
+	--h2: clamp(1.72rem, 1.597rem + 0.61vw, 2.15rem); /* step-1 -> step-2 */
+	--h3: var(--step-1);
+}

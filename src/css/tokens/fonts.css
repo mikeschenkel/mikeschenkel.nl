@@ -1,5 +1,4 @@
 :root {
-	--font-base: 'Bespoke Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
-	--font-special: 'Atkinson Hyperlegible', ui-sans-serif, system-ui, -apple-system, sans-serif;
+	--font-base: 'Rubik', ui-sans-serif, system-ui, -apple-system, sans-serif;
 	--font-code: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
