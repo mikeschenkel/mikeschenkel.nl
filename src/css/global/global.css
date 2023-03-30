@@ -55,7 +55,7 @@ a {
 	}
 }
 
-a[href*='mailto:'] {
+a[href*="mailto:"] {
 	--link-color: currentColor;
 	--link-underline-thickness: 0.15em;
 	font-weight: 700;
@@ -79,7 +79,7 @@ a[href*='mailto:'] {
 	}
 }
 
-[tabindex='-1']:focus {
+[tabindex="-1"]:focus {
 	outline: none;
 }
 
